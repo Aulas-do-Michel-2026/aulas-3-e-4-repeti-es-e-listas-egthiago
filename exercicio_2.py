@@ -25,3 +25,14 @@ Pode-se utilizar o comando "while" ou até o "for" para te ajudar nisso.
 
 Fonte: Curso em vídeo.
 """
+numero = int(input('Digite um número inteiro: '))
+
+fatorial = 1
+
+if numero < 0:
+    print('Não existe fatorial para números negativos.')
+else:
+    for i in range(1, numero + 1):
+        fatorial *= i
+
+print(f'O fatorial de {numero} é {fatorial}')
