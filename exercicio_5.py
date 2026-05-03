@@ -56,4 +56,4 @@ for i in range(len(lista_de_organismos)):
         maior_media = media
         indice_maior_media = i
 
-print(lista_de_organismos[indice_maior_media])   
+print(f"O organismo com maior média é o da posição {indice_maior_media} da lista.")
