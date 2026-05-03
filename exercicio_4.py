@@ -34,3 +34,30 @@ primeira_lista = [*map(int, input("Digite a sua primeira lista (separando os nú
 segunda_lista = [*map(int, input("Digite a sua segunda lista (separando os números por vírgula): ").split(","))]
 
 # Fazer a partir daqui
+
+primeira_lista = [*map(int, input("Digite a sua primeira lista (separando os números por vírgula): ").split(","))]
+segunda_lista = [*map(int, input("Digite a sua segunda lista (separando os números por vírgula): ").split(","))]
+
+maior_primeira = 0
+maior_segunda = 0
+
+for i in range(0, len(primeira_lista)):
+    if i == 0:
+        maior_primeira = primeira_lista[0]
+    else:
+        if primeira_lista[i] > maior_primeira:
+            maior_primeira = primeira_lista[i]
+
+for i in range(0, len(segunda_lista)):
+    if i == 0:
+        maior_segunda = segunda_lista[0]
+    else:
+        if segunda_lista[i] > maior_segunda:
+            maior_segunda = segunda_lista[i]
+
+if maior_primeira > maior_segunda:
+    print('Primeira lista')
+if maior_segunda > maior_primeira:
+    print('Segunda lista')
+if maior_primeira == maior_segunda:
+    print('Ambas')
