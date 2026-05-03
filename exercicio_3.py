@@ -24,8 +24,6 @@ lista = [*map(int, input("Digite a sua lista (separando os números por vírgula
 
 # Fazer a partir daqui...
 
-lista = [*map(int, input("Digite a sua lista (separando os números por vírgula): ").split(","))]
-
 impares = []
 
 for i in range(0, len(lista)):
